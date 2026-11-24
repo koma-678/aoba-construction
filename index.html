@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="青葉建設株式会社。建築工事・土木工事・リフォームを通じて、地域の未来を支える建設会社です。">
+
+    <title>青葉建設株式会社 | AOBA CONSTRUCTION</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <strong>AOBA</strong>
+            <span>CONSTRUCTION</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#about">会社紹介</a>
+            <a href="#services">事業内容</a>
+            <a href="#projects">施工実績</a>
+            <a href="#company">会社概要</a>
+            <a href="#contact" class="nav-contact">お問い合わせ</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger"
+            aria-label="メニューを開く"
+            aria-controls="nav"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- メインビジュアル -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-label">BUILDING THE FUTURE</p>
+
+                <h1>
+                    未来を築く。<br>
+                    信頼をつなぐ。
+                </h1>
+
+                <p class="hero-description">
+                    確かな技術と誠実な仕事で、<br>
+                    地域の暮らしと未来を支えます。
+                </p>
+
+                <a href="#services" class="primary-btn">
+                    事業内容を見る →
+                </a>
+            </div>
+
+            <div class="hero-bottom">
+                <span>AOBA CONSTRUCTION</span>
+                <span>SCROLL DOWN ↓</span>
+            </div>
+        </section>
+
+        <!-- 会社紹介 -->
+        <section class="about section" id="about">
+
+            <div class="about-image">
+                <img src="images/about.jpg" alt="建設現場のイメージ" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <p class="section-label">01 / ABOUT US</p>
+
+                <h2>地域とともに、<br>その先の未来へ。</h2>
+
+                <p>
+                    青葉建設株式会社は、建築・土木工事を通じて、
+                    安全で快適な社会づくりを目指しています。
+                </p>
+
+                <p>
+                    一つひとつの現場に誠実に向き合い、
+                    確かな技術と品質でお客様の期待に応えます。
+                </p>
+
+                <a href="#company" class="text-link">
+                    会社概要を見る →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- 事業内容 -->
+        <section class="services section" id="services">
+
+            <div class="section-heading">
+                <p class="section-label">02 / OUR SERVICES</p>
+                <h2>事業内容</h2>
+                <p>確かな技術で、幅広い建設ニーズにお応えします。</p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <img src="images/service01.jpg" alt="建築物の施工イメージ" loading="lazy">
+                    <div class="service-content">
+                        <span>01</span>
+                        <h3>建築工事</h3>
+                        <p>
+                            住宅・商業施設・オフィスなど、
+                            安全性と快適性を重視した建築工事を行います。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="images/service02.jpg" alt="土木工事のイメージ" loading="lazy">
+                    <div class="service-content">
+                        <span>02</span>
+                        <h3>土木工事</h3>
+                        <p>
+                            道路整備や造成工事を通じて、
+                            地域の社会インフラを支えます。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="images/service03.jpg" alt="住宅リフォームのイメージ" loading="lazy">
+                    <div class="service-content">
+                        <span>03</span>
+                        <h3>リフォーム</h3>
+                        <p>
+                            住宅や施設の改修を通じて、
+                            より快適な空間をご提案します。
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 施工実績 -->
+        <section class="projects section" id="projects">
+
+            <div class="section-heading">
+                <p class="section-label">03 / OUR PROJECTS</p>
+                <h2>施工実績</h2>
+                <p>施工事例のイメージをご紹介します。</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">
+                    すべて
+                </button>
+
+                <button class="filter-btn" data-filter="building" aria-pressed="false">
+                    建築
+                </button>
+
+                <button class="filter-btn" data-filter="civil" aria-pressed="false">
+                    土木
+                </button>
+
+                <button class="filter-btn" data-filter="renovation" aria-pressed="false">
+                    リフォーム
+                </button>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card" data-category="building">
+                    <button class="project-image" type="button">
+                        <img src="images/project01.jpg" alt="オフィスビル新築工事" loading="lazy">
+                    </button>
+                    <span>建築工事</span>
+                    <h3>オフィスビル新築工事</h3>
+                </article>
+
+                <article class="project-card" data-category="civil">
+                    <button class="project-image" type="button">
+                        <img src="images/project02.jpg" alt="道路整備工事" loading="lazy">
+                    </button>
+                    <span>土木工事</span>
+                    <h3>道路整備工事</h3>
+                </article>
+
+                <article class="project-card" data-category="renovation">
+                    <button class="project-image" type="button">
+                        <img src="images/project03.jpg" alt="住宅リノベーション" loading="lazy">
+                    </button>
+                    <span>リフォーム</span>
+                    <h3>住宅リノベーション</h3>
+                </article>
+
+                <article class="project-card" data-category="building">
+                    <button class="project-image" type="button">
+                        <img src="images/project04.jpg" alt="商業施設建築工事" loading="lazy">
+                    </button>
+                    <span>建築工事</span>
+                    <h3>商業施設建築工事</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 会社概要 -->
+        <section class="company section" id="company">
+
+            <div class="section-heading">
+                <p class="section-label">04 / COMPANY PROFILE</p>
+                <h2>会社概要</h2>
+            </div>
+
+            <table class="company-table">
+                <tbody>
+                    <tr>
+                        <th scope="row">会社名</th>
+                        <td>青葉建設株式会社</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">代表者</th>
+                        <td>青葉 太郎</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">設立</th>
+                        <td>2005年4月</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">所在地</th>
+                        <td>福島県会津若松市（架空）</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">事業内容</th>
+                        <td>建築工事・土木工事・リフォーム</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">営業時間</th>
+                        <td>平日 9:00〜18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="contact section" id="contact">
+
+            <div class="section-heading">
+                <p class="section-label">05 / CONTACT</p>
+                <h2>お問い合わせ</h2>
+                <p>工事のご相談・お見積もりなど、お気軽にご相談ください。</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+
+                <div class="form-group">
+                    <label for="name">お名前 <span>必須</span></label>
+                    <input type="text" id="name" name="name" autocomplete="name"
+                        placeholder="山田 太郎" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス <span>必須</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">お問い合わせ種別 <span>必須</span></label>
+
+                    <select id="category" name="category" required>
+                        <option value="">選択してください</option>
+                        <option value="building">建築工事について</option>
+                        <option value="civil">土木工事について</option>
+                        <option value="renovation">リフォームについて</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容 <span>必須</span></label>
+
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="お問い合わせ内容をご入力ください"
+                        required></textarea>
+                </div>
+
+                <p>※ 制作実績用のフォームです。実際の送信は行われません。</p>
+
+                <button type="submit" class="primary-btn">
+                    入力内容を確認する →
+                </button>
+
+                <p id="form-message" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 画像拡大表示 -->
+    <dialog class="image-modal" id="image-modal">
+        <button id="modal-close" type="button" aria-label="画像を閉じる">×</button>
+        <img id="modal-image" alt="">
+    </dialog>
+
+    <!-- トップに戻る -->
+    <button id="back-to-top" class="back-to-top" type="button"
+        aria-label="ページの先頭に戻る">
+        ↑
+    </button>
+
+    <!-- フッター -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            AOBA CONSTRUCTION
+        </div>
+
+        <p>未来を築く。信頼をつなぐ。</p>
+
+        <small>架空の企業を題材にした制作実績用サイトです。</small>
+
+        <small>© 2026 AOBA CONSTRUCTION.</small>
+
+    </footer>
+
+</body>
+</html>
